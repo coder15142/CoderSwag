@@ -12,7 +12,7 @@ import com.example.coderswag.R
 
 class CategoryAdapter(context : Context, categories : List<Category>) : BaseAdapter() {
     val context = context
-    val categories = categories
+    val categories = categories     
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
        val categoryview : View
 
