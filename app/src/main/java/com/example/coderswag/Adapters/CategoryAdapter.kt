@@ -12,10 +12,9 @@ import com.example.coderswag.R
 
 class CategoryAdapter(context : Context, categories : List<Category>) : BaseAdapter() {
     val context = context
-    val categories = categories     
+    val categories = categories        
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
        val categoryview : View
-
         categoryview = LayoutInflater.from(context).inflate(R.layout.category_list_item,null)
         val categoryImage : ImageView = categoryview.findViewById(R.id.categoryImage)
         val categoryName : TextView = categoryview.findViewById(R.id.categoryName)
